@@ -5,3 +5,5 @@ Y='\e[33m'
 
 echo -e "\e[33m hellow DevOps"
 echo -e " $G print total number of elements : $#"
+
+echo -e " $Y print total number of elements : $@"
