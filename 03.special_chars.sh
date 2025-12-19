@@ -1,3 +1,3 @@
 #!/bin/bash
 
-echo -e "\e[31m hellow DevOps"
+echo -e "\e[32m hellow DevOps"
