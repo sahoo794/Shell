@@ -4,7 +4,7 @@ NUMBER=$1
 
 if [ $NUMBER -ne 10 ]
 then
-    echo "10 is greater than :$NUMBER"
+    echo "10 is not equal to :$NUMBER"
 else
-    echo "10 is less than :$NUMBER"
+    echo "10 is equal to :$NUMBER"
 fi
