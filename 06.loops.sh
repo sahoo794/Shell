@@ -26,7 +26,7 @@ yum list installed $i -y
     if [ $? -ne 0 ]
     then
     echo "$i is not installed"
-    yum instal $i -y &>>LOGFILE
+    yum install $i -y &>>LOGFILE
      VALIDATE $? "$i"
     else
     echo -e "$Y $i is already installed $N"
