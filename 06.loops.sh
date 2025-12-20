@@ -5,7 +5,7 @@ G="\e[32m"
 Y="\e[33m"
 N="\e[0m"
 
-for i in ($1)
+for i in $@
 do
-echo -e "$G print natural numbers: $R $i"
+yum install $i -y
 done
