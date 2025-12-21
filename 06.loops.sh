@@ -1,6 +1,6 @@
 #!/bin/bash
 DATE=$(date +%F)
-LOGSDIR=/home/centos/shellscript-logs
+LOGSDIR=/home/ec2-user
 # /home/centos/shellscript-logs/script-name-date.log
 SCRIPT_NAME=$0
 LOGFILE=$LOGSDIR/$0-$DATE.log
@@ -27,7 +27,7 @@ yum list installed $i -y
     then
     echo "$i is not installed"
     yum install $i -y &>>LOGFILE
-     VALIDATE $? "$i"
+    VALIDATE $? "$i"
     else
     echo -e "$Y $i is already installed $N"
     fi
